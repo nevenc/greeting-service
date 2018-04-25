@@ -1,0 +1,31 @@
+service:
+  greeting: ¡Hola mundo!
+
+info:
+  build:
+    artifact: @project.artifactId@
+    name: @project.name@
+    description: @project.description@
+    version: @project.version@
+
+management:
+  info:
+    git:
+      mode: full
+  security:
+    enabled: false
+  cloudfoundry:
+    skip-ssl-validation: true
+
+security:
+  basic:
+    enabled: false
+
+endpoints:
+  actuator:
+    sensitive: false
+
+logging:
+  level:
+    com:
+      example: INFO

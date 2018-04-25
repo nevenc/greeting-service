@@ -1,0 +1,7 @@
+---
+applications:
+- name: greeting-service
+  random-route: true
+  path: target/greeting-service-0.0.1-SNAPSHOT.jar
+  services:
+  - config-server
